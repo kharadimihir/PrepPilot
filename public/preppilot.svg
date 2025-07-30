@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="320" height="80" viewBox="0 0 320 80">
+  <style>
+    .text { 
+      font: bold 48px "Segoe UI", "Helvetica Neue", sans-serif; 
+      fill: #7c3aed;
+    }
+  </style>
+  <text x="10" y="55" class="text">PrepPilot </text>
+</svg>
