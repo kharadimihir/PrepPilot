@@ -73,7 +73,7 @@ export async function getUserOnboardingStatus() {
   const { userId } = await auth();
 
   if (!userId) {
-    throw new Error("Unauthorized User");
+    return { isOnboarded: false };
   }
 
   const user = await db.user.findUnique({
@@ -83,7 +83,7 @@ export async function getUserOnboardingStatus() {
   });
 
   if (!user) {
-    throw new Error("User Not Found");
+    return { isOnboarded: false }; 
   }
 
   try {
